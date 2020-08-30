@@ -182,18 +182,6 @@ public class Bacon {
 		}
 	}
 	
-//	private String getMovie(String node1, String node2) {
-//		List<ActorNode> list = graph.get(node1);
-//		ArrayList<String> tempMovies = new ArrayList<String>();
-//		for(ActorNode node: list) {
-//			if (node.getName().equals(node2)) {
-//				tempMovies = node.getMovies();
-//				return tempMovies.get(0);
-//			}
-//		}
-//		return null;
-//	}
-	
 	public String getMovie(String fromActor, String toActor) {
 		ArrayList<HashMap<Integer, String>> moviesArray = new ArrayList<HashMap<Integer, String>>();
 		List<ActorNode> list = graph.get(fromActor);
